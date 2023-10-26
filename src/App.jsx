@@ -37,7 +37,8 @@ const App = () => {
 			name: "email",
 			type: "email",
 			label: "Email",
-			errorMessage: "Name should be 3-20 character long",
+			errorMessage:
+				"Please enter a valid email address,Invalid email format, Missing '@' symbol",
 			pattern:
 				"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
 			required: true,
