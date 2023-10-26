@@ -45,7 +45,7 @@ const App = () => {
 		{
 			id: 4,
 			name: "password",
-			type: "text",
+			type: "password",
 			label: "Password",
 			errorMessage:
 				"Password should consist atleast 1 Lower case letter, 1 numeric character, 1 Special character and  atleast 8-20 characters",
