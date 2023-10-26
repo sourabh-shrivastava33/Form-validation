@@ -39,19 +39,18 @@ const App = () => {
 			label: "Email",
 			errorMessage:
 				"Please enter a valid email address,Invalid email format, Missing '@' symbol",
-			pattern:
-				"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
+
 			required: true,
 		},
 		{
 			id: 4,
 			name: "password",
-			type: "password",
+			type: "text",
 			label: "Password",
 			errorMessage:
-				"Password should consist atleast 1 Uppercase letter, 1 Lower case letter and 1 numeric character atleast 8-32 characters",
+				"Password should consist atleast 1 Lower case letter, 1 numeric character, 1 Special character and  atleast 8-20 characters",
 			pattern:
-				"^(?=.*d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[a-zA-Z0-9]).{8,32}$",
+				"(?=[a-z0-9@#$%^&+!=]+$)^(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%^&+!=])(?=.{8,20}).*$",
 			required: true,
 		},
 		{
